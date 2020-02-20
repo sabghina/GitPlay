@@ -9,12 +9,10 @@ namespace GitPlay.Controllers
     public class HomeController : Controller
     {
         // GET: Home
-        public ActionResult Index(string id)
-        {
-            if (string.IsNullOrWhiteSpace(id))
-                return View("Error");
-            else
-                return View("index");
+        public ActionResult Index()
+
+        { 
+                return View("Index");
         }
     }
 }
