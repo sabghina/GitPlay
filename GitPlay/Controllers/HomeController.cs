@@ -11,8 +11,10 @@ namespace GitPlay.Controllers
         // GET: Home
         public ActionResult Index()
 
-        { 
-                return View("Index");
+        {
+            return View();
         }
     }
 }
+
+ 
