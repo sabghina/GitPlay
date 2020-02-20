@@ -13,9 +13,5 @@ namespace GitPlay.Controllers
         {
             return "Let's master github ";
         }
-        public string Index2()
-        {
-            return "First Branch Created";
-        }
     }
 }
