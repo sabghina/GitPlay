@@ -9,9 +9,12 @@ namespace GitPlay.Controllers
     public class HomeController : Controller
     {
         // GET: Home
-        public string Index()
+        public ActionResult Index(string id)
         {
-            return "Let's master github ";
+            if (string.IsNullOrWhiteSpace(id))
+                return View("Error");
+            else
+                return View("index");
         }
     }
 }
